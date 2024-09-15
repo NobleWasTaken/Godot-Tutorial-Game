@@ -1,58 +1,58 @@
-[gd_scene load_steps=21 format=3 uid="uid://cc36um2yr7bsj"]
+[gd_scene load_steps=21 format=3 uid="uid://b0ecy1lpibak5"]
 
-[ext_resource type="Texture2D" uid="uid://cr0e24b0smp1o" path="res://assets/sprites/coin.png" id="1_421pu"]
-[ext_resource type="Script" path="res://scripts/coin.gd" id="1_qgpup"]
-[ext_resource type="AudioStream" uid="uid://dj3k1mvii8fu0" path="res://assets/sounds/coin.wav" id="3_s02rv"]
+[ext_resource type="Texture2D" uid="uid://cr0e24b0smp1o" path="res://assets/sprites/coin.png" id="1_a27hq"]
+[ext_resource type="Script" path="res://scripts/final_coin.gd" id="1_hxj5k"]
+[ext_resource type="AudioStream" uid="uid://dj3k1mvii8fu0" path="res://assets/sounds/coin.wav" id="2_i6gic"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k8mf5"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ugy1g"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_beiea"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d1mkt"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oh4jl"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(64, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_snfmb"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(80, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d20rl"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(96, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a4y3f"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(112, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3c32v"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(128, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gmavp"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(144, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fgamt"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(160, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ow77g"]
-atlas = ExtResource("1_421pu")
+atlas = ExtResource("1_a27hq")
 region = Rect2(176, 0, 16, 16)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_t2fry"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_apxue"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -96,59 +96,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ofbse"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_ivs4d"]
 radius = 10.0499
-
-[sub_resource type="Animation" id="Animation_fnirv"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("CollisionShape2D:disabled")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("PickupSound:stream")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("3_s02rv")]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("PickupSound:playing")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
 
 [sub_resource type="Animation" id="Animation_lah4o"]
 resource_name = "pickup"
@@ -186,7 +135,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("3_s02rv")]
+"values": [ExtResource("2_i6gic")]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -215,26 +164,79 @@ tracks/4/keys = {
 }]
 }
 
+[sub_resource type="Animation" id="Animation_fnirv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PickupSound:stream")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_i6gic")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PickupSound:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_joyna"]
 _data = {
 "RESET": SubResource("Animation_fnirv"),
 "pickup": SubResource("Animation_lah4o")
 }
 
-[node name="Coin" type="Area2D"]
+[node name="FinalCoin" type="Area2D"]
 collision_mask = 2
-script = ExtResource("1_qgpup")
+script = ExtResource("1_hxj5k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_t2fry")
+position = Vector2(0.111984, -0.0730591)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_apxue")
 autoplay = "default"
-frame_progress = 0.497689
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_ofbse")
+position = Vector2(-0.00842285, 0.0338287)
+shape = SubResource("CircleShape2D_ivs4d")
 
 [node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_s02rv")
+stream = ExtResource("2_i6gic")
 bus = &"SFX"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
